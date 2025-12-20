@@ -415,6 +415,7 @@ def get_account_columns(invoice_list, include_payments):
 
 def get_invoices(filters, additional_query_columns):
 	si = frappe.qb.DocType("Sales Invoice")
+	#for testing
 	query = (
 		frappe.qb.from_(si)
 		.select(
